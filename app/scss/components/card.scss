@@ -21,6 +21,12 @@
 	border-radius: rem(5);
 	text-align: center;
 	flex:1;
+	transition: background 150ms ease-in-out;
+	cursor: pointer;
+
+	&:hover {
+		background: var(--dark-card-hover);	
+	}
 	&--facebook {
 		border-top: rem(5) solid var(--facebook);
 	}
@@ -45,12 +51,18 @@
 		border-top: rem(5) solid var(--youtube);
 		
 	}
+	&--grid {
+		
+	}
 	&__platform {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		margin-top: rem(5);
 		margin-bottom: rem(28);
+	}
+	&__subtitle{
+		font-size: rem(14);
 	}
 	&__icon {
 		margin-right: rem(8);
@@ -85,7 +97,7 @@
 			font-size: rem(56);
 		}
 		&--small {
-
+			font-size: rem(32);
 		}
 	}
 	&__label {
